@@ -1,0 +1,57 @@
+{
+  "name": "@touqeerraza/rn-publisher",
+  "version": "0.0.1",
+  "description": "Interactive CLI to publish React Native apps to Firebase App Distribution, Google Play, and TestFlight.",
+  "keywords": [
+    "react-native",
+    "publish",
+    "firebase",
+    "google-play",
+    "testflight",
+    "cli"
+  ],
+  "license": "MIT",
+  "author": "Touqeer Raza",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/touqeerraza/rn-publisher.git"
+  },
+  "type": "module",
+  "types": "./dist/index.d.ts",
+  "bin": "./dist/cli.js",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "templates",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsc && node -e \"require('fs').chmodSync('dist/cli.js', 0o755)\"",
+    "prepare": "tsc && node -e \"require('fs').chmodSync('dist/cli.js', 0o755)\"",
+    "prepublishOnly": "tsc && node -e \"require('fs').chmodSync('dist/cli.js', 0o755)\""
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@inquirer/prompts": "^7.8.0",
+    "commander": "^14.0.0",
+    "execa": "^9.6.0",
+    "picocolors": "^1.1.1",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.0",
+    "typescript": "^5.9.2"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "prod": {
+    "firebase": {
+      "appId": "__FIREBASE_APP_ID__",
+      "groups": "testers"
+    },
+    "play": {
+      "packageName": "__PACKAGE_NAME__",
+      "serviceAccountJson": "./play-service-account.json",
+      "closedTrack": "alpha",
+      "releaseStatus": "draft"
+    },
+    "apple": {
+      "bundleId": "__BUNDLE_ID__",
+      "apiKeyId": "XXXXXXXXXX",
+      "apiIssuerId": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+      "apiKeyP8": "./AuthKey_XXXXXXXXXX.p8",
+      "uploadEmail": "",
+      "appSpecificPassword": ""
+    }
+  }
+}
