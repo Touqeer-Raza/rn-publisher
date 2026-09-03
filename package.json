@@ -14,7 +14,7 @@
   "author": "Touqeer Raza",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/touqeerraza/rn-publisher.git"
+    "url": "git+https://github.com/Touqeer-Raza/rn-publisher.git"
   },
   "type": "module",
   "types": "./dist/index.d.ts",
